@@ -1,0 +1,156 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Management Dashboard</title>
+  <style>
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0;
+    }
+    caption {
+      font-size: 1.5em;
+      margin: 10px;
+      font-weight: bold;
+    }
+    th, td {
+      border: 1px solid #333;
+      padding: 8px;
+      text-align: center;
+    }
+    thead {
+      background-color: #f0f0f0;
+    }
+    tfoot {
+      background-color: #f9f9f9;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h1 style="text-align: center;">Student Management Dashboard</h1>
+
+  <table>
+    <caption>Computer Science Students - Batch 2024</caption>
+
+    <thead>
+      <tr>
+        <th scope="col">Student ID</th>
+        <th scope="col">Student Name</th>
+        <th scope="colgroup" colspan="2">Course Details</th>
+        <th scope="colgroup" colspan="2">Contact Information</th>
+        <th scope="col">Semester</th>
+        <th scope="col">GPA</th>
+        <th scope="col">Status</th>
+      </tr>
+      <tr>
+        <th></th>
+        <th></th>
+        <th scope="col">Course Name</th>
+        <th scope="col">Credits</th>
+        <th scope="col">Email</th>
+        <th scope="col">Phone</th>
+        <th></th>
+        <th></th>
+        <th></th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr>
+        <td rowspan="2">CS101</td>
+        <td rowspan="2">Aman Aggrwal</td>
+        <td>Data Structures</td>
+        <td>5</td>
+        <td rowspan="2">aman.56@uni.com</td>
+        <td rowspan="2">+91 9876543210</td>
+        <td rowspan="2">4</td>
+        <td rowspan="2">4.0</td>
+        <td rowspan="2">Inactive</td>
+      </tr>
+      <tr>
+        <td>Algorithms</td>
+        <td>4</td>
+      </tr>
+
+      <tr>
+        <td>CS102</td>
+        <td>Rahul Verma</td>
+        <td>Database Systems</td>
+        <td>3</td>
+        <td>rahul.verma@uni.com</td>
+        <td>+91 9123456789</td>
+        <td>3</td>
+        <td>3.4</td>
+        <td>Active</td>
+      </tr>
+
+      <tr>
+        <td rowspan="2">CS103</td>
+        <td rowspan="2">Riya Gupta</td>
+        <td>Operating Systems</td>
+        <td>3</td>
+        <td rowspan="2">riya.109@uni.com</td>
+        <td rowspan="2">+91 9423571684</td>
+        <td rowspan="2">5</td>
+        <td rowspan="2">3.9</td>
+        <td rowspan="2">Active</td>
+      </tr>
+      <tr>
+        <td>Computer Networks</td>
+        <td>4</td>
+      </tr>
+
+      <tr>
+        <td>CS104</td>
+        <td>Amit Sharma</td>
+        <td>Artificial Intelligence</td>
+        <td>3</td>
+        <td>amit.sharma@uni.com</td>
+        <td>+91 9988776655</td>
+        <td>6</td>
+        <td>2.9</td>
+        <td>Inactive</td>
+      </tr>
+
+      <tr>
+        <td>CS105</td>
+        <td>Aarush Patel</td>
+        <td>Machine Learning</td>
+        <td>3</td>
+        <td>aarush.39@uni.com</td>
+        <td>+91 972345678</td>
+        <td>2</td>
+        <td>3.7</td>
+        <td>Active</td>
+      </tr>
+
+      <tr>
+        <td>CS106</td>
+        <td>Anjali Sharma</td>
+        <td>Web Development</td>
+        <td>4</td>
+        <td>anjali.532a@uni.com</td>
+        <td>+91 7400123456</td>
+        <td>1</td>
+        <td>2.5</td>
+        <td>Inactive</td>
+      </tr>
+    </tbody>
+
+    <tfoot>
+      <tr>
+        <td colspan="9">Total Students: 6 | Average GPA: 3.37 | Active: 4 | Inactive: 2</td>
+      </tr>
+    </tfoot>
+  </table>
+
+  <section>
+    <h2>Summary</h2>
+    <p>The Computer Science Batch of 2024 consists of 6 students. Among them, 3 are active and 3 are inactive. The average GPA across all students is 3.37.</p>
+  </section>
+</body>
+</html>
