@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Course Registration Form</title>
+</head>
+<body>
+   <h1 style="text-align: center;">Course Registration Form</h1>
+
+  <form onsubmit="return showMessage()" enctype="multipart/form-data">
+    
+    <fieldset>
+      <legend>Personal Information</legend>
+      <label for="fullname">Full Name: </label>
+      <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required><br><br>
+
+      <label for="email">Email Address: </label>
+      <input type="email" id="email" name="email" placeholder="example@email.com" required><br><br>
+
+      <label for="phone">Phone Number: </label>
+      <select id="country-code" name="country_code" required>
+        <option value="+91">+91 (India)</option>
+        <option value="+1">+1 (USA)</option>
+        <option value="+44">+44 (UK)</option>
+        <option value="+61">+61 (Australia)</option>
+        <option value="+81">+81 (Japan)</option>
+        <option value="+49">+49 (Germany)</option>
+        <option value="+33">+33 (France)</option>
+        <option value="+971">+971 (UAE)</option>
+        <option value="+86">+86 (China)</option>
+        <option value="+92">+92 (Pakistan)</option>
+        <option value="+880">+880 (Bangladesh)</option>
+      </select>
+      <input type="tel" id="phone" name="phone" placeholder="XXXXXXXXXX"><br><br>
+
+      <label for="dob">Date of Birth: </label>
+      <input type="date" id="dob" name="dob" required><br><br>
+
+      <label for="profile">Profile Picture: </label>
+      <input type="file" id="profile" name="profile" accept="image/*"><br><br>
+    </fieldset>
+    <br>
+
+    <fieldset>
+      <legend>Academic Background</legend>
+      <label for="education">Current Education Level: </label>
+      <select id="education" name="education">
+        <option value="highschool">High School</option>
+        <option value="bachelors">Bachelor's</option>
+        <option value="masters">Master's</option>
+        <option value="phd">PhD</option>
+      </select><br><br>
+
+      <label for="field">Field of Study: </label>
+      <input type="text" id="field" name="field" placeholder="e.g. Computer Science"><br><br>
+
+      <label for="experience">Years of Programming Experience: </label>
+      <input type="number" id="experience" name="experience" min="0" max="20" placeholder="0"><br><br>
+    </fieldset>
+    <br>
+
+    <fieldset>
+      <legend>Course Preferences</legend>
+      <p>Preferred Learning Mode:</p>
+      <label><input type="radio" name="learning_mode" value="online" required> Online</label>
+      <label><input type="radio" name="learning_mode" value="offline"> Offline</label>
+      <label><input type="radio" name="learning_mode" value="hybrid"> Hybrid</label>
+      <br><br>
+
+      <p>Course Categories:</p>
+      <label><input type="checkbox" name="categories" value="webdev"> Web Development</label>
+      <label><input type="checkbox" name="categories" value="mobile"> Mobile App Development</label>
+      <label><input type="checkbox" name="categories" value="datasci"> Data Science</label>
+      <label><input type="checkbox" name="categories" value="ai"> AI/ML</label>
+      <label><input type="checkbox" name="categories" value="devops"> DevOps</label>
+      <br><br>
+
+      <p>Preferred Schedule:</p>
+      <label><input type="radio" name="schedule" value="weekdays" required> Weekdays</label>
+      <label><input type="radio" name="schedule" value="weekends"> Weekends</label>
+      <label><input type="radio" name="schedule" value="flexible"> Flexible</label>
+      <br><br>
+    </fieldset>
+    <br>
+
+    <fieldset>
+      <legend>Additional Information</legend>
+      <label for="prog-level">Programming Experience (1-10 years): </label>
+      <input type="number" id="prog-level" name="prog_level" min="1" max="10" placeholder="1-10" style="width:60px;">
+      <br><br>
+      <label for="comments">Special Requirements or Comments:</label><br>
+      <textarea id="comments" name="comments" rows="4" cols="40" placeholder="Enter any special requirements"></textarea>
+      <br><br>
+
+      <p>Preferred Contact Method:</p>
+      <label><input type="radio" name="contact_method" value="email" required> Email</label>
+      <label><input type="radio" name="contact_method" value="phone"> Phone</label>
+      <label><input type="radio" name="contact_method" value="sms"> SMS</label>
+    </fieldset>
+    <br>
+
+    <fieldset>
+      <legend>Terms and Conditions</legend>
+      <label><input type="checkbox" name="terms" required> I agree to the Terms and Conditions</label><br>
+      <label><input type="checkbox" name="newsletter"> I want to receive newsletters and updates</label>
+    </fieldset>
+    <br>
+
+    <div style="text-align: center; margin-top: 20px;">
+      <button type="submit">Submit</button>
+      <button type="reset">Reset</button>
+    </div>
+  </form>
+
+  <script>
+    function showMessage() {
+      alert("✅ Your form has been submitted successfully!");
+      return false;
+    }
+  </script>
+</body>
+</html>
